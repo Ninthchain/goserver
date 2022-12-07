@@ -1,0 +1,20 @@
+package core
+
+import (
+	"fmt"
+	"log"
+	"net"
+)
+
+func createNetServer(host string, port string, listener net.Listener) net.Listener {
+	addr := net.JoinHostPort(host, port)
+
+	fmt.Printf("tcp address: %s\n", addr)
+
+	listener, err := net.Listen("tcp", addr)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return listener
+}

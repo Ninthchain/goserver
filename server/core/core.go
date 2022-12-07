@@ -1,5 +1,0 @@
-package httpservercore
-
-func doSomething() {
-
-}

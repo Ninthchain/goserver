@@ -1,8 +1,5 @@
-package httpserver
+package netserver
 
-func createServer() {
-}
-
-func initServerModule() {
-
+func initNetServer(hostname string, port string) {
+	Core
 }
