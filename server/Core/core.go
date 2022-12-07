@@ -1,0 +1,5 @@
+package httpservercore
+
+func doSomething() {
+
+}
